@@ -17,7 +17,7 @@ void add_matrices(int a[][COLS], int b[][COLS], int c[][COLS]) {
 int main() {
     int a[ROWS][COLS], b[ROWS][COLS], c[ROWS][COLS];
     int i, j, k;
-    for (k = 0; k < 1000000000000; k++) {
+    for (k = 0; k < 1000000; k++) {
         srand(time(NULL));
         for (i = 0; i < ROWS; i++) {
             for (j = 0; j < COLS; j++) {
