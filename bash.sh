@@ -8,3 +8,4 @@ for i in {1..3}; do
   time ./try_$scr
 done
 `
+
