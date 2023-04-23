@@ -4,7 +4,7 @@ ml icc
 arr=( "avx" "sse4.2" "sse4.1" "sse3" "sse2" "ssse3")
 for j in "${arr[@]}"; do
 for i in {1..3}; do
-name="$j_$i"
+name=date +%T
 icc -O$i -m$j F1.c -o try-$name
 echo "$j $i:"
 time ./try-$name
